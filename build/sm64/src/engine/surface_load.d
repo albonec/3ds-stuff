@@ -20,7 +20,8 @@ build/us_3ds/src/engine/surface_load.o: src/engine/surface_load.c \
  src/game/macro_special_objects.h src/engine/surface_collision.h \
  src/game/mario.h src/game/object_list_processor.h src/game/area.h \
  src/game/camera.h src/engine/geo_layout.h src/engine/graph_node.h \
- include/level_table.h levels/level_defines.h src/engine/surface_load.h
+ include/level_table.h levels/level_defines.h src/engine/surface_load.h \
+ src/game/game_init.h src/game/memory.h
 include/PR/ultratypes.h:
 include/prevent_bss_reordering.h:
 include/sm64.h:
@@ -82,3 +83,5 @@ src/engine/graph_node.h:
 include/level_table.h:
 levels/level_defines.h:
 src/engine/surface_load.h:
+src/game/game_init.h:
+src/game/memory.h:

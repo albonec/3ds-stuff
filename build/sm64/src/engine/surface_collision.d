@@ -18,7 +18,8 @@ build/us_3ds/src/engine/surface_collision.o: \
  src/game/object_list_processor.h src/game/area.h src/game/camera.h \
  src/engine/geo_layout.h src/game/memory.h src/engine/graph_node.h \
  include/level_table.h levels/level_defines.h \
- src/engine/surface_collision.h src/engine/surface_load.h
+ src/engine/surface_collision.h src/engine/surface_load.h \
+ src/game/game_init.h src/game/memory.h
 include/PR/ultratypes.h:
 include/sm64.h:
 include/types.h:
@@ -75,3 +76,5 @@ include/level_table.h:
 levels/level_defines.h:
 src/engine/surface_collision.h:
 src/engine/surface_load.h:
+src/game/game_init.h:
+src/game/memory.h:
