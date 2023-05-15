@@ -24,7 +24,7 @@ TARGET_WEB ?= 0
 # Build for Nintendo 3DS
 TARGET_N3DS ?= 1
 # Compiler to use (ido or gcc)
-COMPILER ?= ido
+COMPILER ?= gcc
 
 # Automatic settings only for ports
 ifeq ($(TARGET_N64),0)
@@ -261,10 +261,14 @@ ifeq ($(TARGET_N64),1)
 ifeq ($(VERSION),eu)
   OPT_FLAGS := -O2
 else
+ifeq ($(VERSION),us)
+  OPT_FLAGS := -O2
+else
 ifeq ($(VERSION),sh)
   OPT_FLAGS := -O2
 else
   OPT_FLAGS := -g
+endif
 endif
 endif
 
